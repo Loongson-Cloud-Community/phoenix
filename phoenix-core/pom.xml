@@ -235,7 +235,8 @@
               <goal>compile</goal>
             </goals>
             <configuration>
-              <protocArtifact>${protobuf.group}:protoc:${protoc.version}:exe:${protoc.arch}</protocArtifact>
+              <!-- protocArtifact>${protobuf.group}:protoc:${protoc.version}:exe:${protoc.arch}</protocArtifact -->
+              <protocExecutable>/usr/local/bin/protoc-2.5.0</protocExecutable>
               <protoSourceRoot>${basedir}/src/main/protobuf/</protoSourceRoot>
               <clearOutputDirectory>false</clearOutputDirectory>
               <checkStaleness>true</checkStaleness>
